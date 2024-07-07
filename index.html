@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+
+
+
+            <link rel="stylesheet" href="styles.css"> 
+    </head>
+
+    <body>
+        <div class="container-fluid m-2 bg-success p-3">
+            <div class="d-flex" role="search">
+                <input id="txtInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit" onclick="searchCountry()">Search</button>
+            </div>
+        </div>
+
+        <div class="container" id="myDIV">
+            <div class="row">
+                <img class="img-thumbnail"  id="flagImg" src="" alt="">
+                <h1 id="name"></h1>
+                <p id="officialName"></p>
+                <p id="region"></p>
+                <p id="population"></p>
+            </div>
+        </div>
+
+
+    
+
+        <h1 class="text-center bg-black text-white p-3 mb-3 fw-bolder">All
+            Countries</h1>
+        <div class="container-fluid vh-100">
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-success tbl" id="tblCountries"
+                        border="1"></table>
+                </div>
+                <div class="col-12">
+                    <div id="card-row" class="row">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    
+
+        <script src="app.js"></script>
+    </body>
+
+    <style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: 3;
+    }
+
+    @keyframes example {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+    }
+    </style>
+</html>
